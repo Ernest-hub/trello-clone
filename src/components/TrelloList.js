@@ -1,6 +1,7 @@
 import React from "react";
 import TrelloCard from "./TrelloCard";
 import TrelloActionButton from "./TrelloActionButton";
+import { connect } from "react-redux";
 import { Droppable, Draggable } from "react-beautiful-dnd";
 import styled from "styled-components";
 
@@ -46,4 +47,4 @@ const TrelloList = ({title, cards, listID, index }) => {
 
 
 
-export default TrelloList;
+export default connect()(TrelloList);

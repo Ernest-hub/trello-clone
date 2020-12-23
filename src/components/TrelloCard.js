@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import Card from "@material-ui/core/Card";
 import Typography from "@material-ui/core/Typography";
@@ -37,4 +38,4 @@ const TrelloCard = ({ text, id, index }) => {
 
 
 
-export default TrelloCard;
+export default connect()(TrelloCard);
